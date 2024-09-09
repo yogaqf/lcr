@@ -1,6 +1,5 @@
 import { Separator } from "@/components/ui/separator";
 import { Bebas_Neue } from "next/font/google";
-import Image from "next/image";
 
 const bebasNeue = Bebas_Neue({
   subsets: ["latin"],
