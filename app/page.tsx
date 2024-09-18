@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useState } from 'react';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Separator } from "@/components/ui/separator";
-import { Bebas_Neue } from "next/font/google";
+import { Bebas_Neue, Manrope } from "next/font/google";
 import { resortManager, accounting, frontOffice, salesMarketing, fbService, fbProduct, housekeeping, engineering, hrSecurity } from "./data.js"
 
 const bebasNeue = Bebas_Neue({
@@ -13,13 +13,20 @@ const bebasNeue = Bebas_Neue({
   variable: "--font-bebas-neue",
 });
 
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: ["800"],
+  variable: "--font-manrope",
+})
+
 // style tailwind css
+const h1 = `${manrope.className} font-bold text-3xl mb-2 text-slate-600`
 const container = "sm:px-20 lg:px-30 xl:px-40 2xl:px-64 px-6 py-20"
 const wrapper = "mt-8 w-full grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 lg:gap-8  mb-10"
 const card = "aspect-square w-full bg-gray-200 rounded-xl flex flex-col justify-end bg-cover shadow-2xl overflow-hidden relative"
 const img = "absolute h-full w-full bg-cover transition-all duration-1000 ease-in-out hover:scale-110"
 const span = `${bebasNeue.className} font-bold text-[20px] sm:text-[2.5vw] text-white leading-none`
-const separator = "relative bg-green-400 border-t-2 border-green-400 w-[12%]"
+const separator = "relative bg-green-500 border-t-2 border-green-400 w-[12%]"
 
 
 
@@ -29,8 +36,8 @@ const Home = () => {
   return (
     <div className={container}>
       {/* Resort Manager */}
-      <h1 className="font-bold text-2xl mb-2 text-slate-700">Resort Manager</h1>
-      <Separator className=" bg-green-400 " />
+      <h1 className={h1}>Resort Manager</h1>
+      <Separator className=" bg-green-500 " />
       <div className={wrapper}>
         <div className={card}>
           {isLoading && <span className={span}>Loading...</span>}
@@ -46,8 +53,8 @@ const Home = () => {
       </div>
 
       {/* Accounting */}
-      <h1 className="font-bold text-2xl mb-2 text-slate-700">Accounting</h1>
-      <Separator className=" bg-green-400 " />
+      <h1 className={h1}>Accounting</h1>
+      <Separator className=" bg-green-500 " />
       <div className={wrapper}>
         {accounting.map((item, index) => (
           <div key={index} className={card}>
@@ -80,8 +87,8 @@ const Home = () => {
       </div>
 
       {/* Front Office */}
-      <h1 className="font-bold text-2xl mb-2 text-slate-700">Front Office</h1>
-      <Separator className=" bg-green-400 " />
+      <h1 className={h1}>Front Office</h1>
+      <Separator className=" bg-green-500 " />
       <div className={wrapper}>
         {frontOffice.map((item, index) => (
           <div key={index} className={card}>
@@ -114,8 +121,8 @@ const Home = () => {
       </div>
 
       {/* Sales Marketing */}
-      <h1 className="font-bold text-2xl mb-2 text-slate-700">Sales Marketing</h1>
-      <Separator className=" bg-green-400 " />
+      <h1 className={h1}>Sales Marketing</h1>
+      <Separator className=" bg-green-500 " />
       <div className={wrapper}>
         {salesMarketing.map((item, index) => (
           <div key={index} className={card}>
@@ -148,8 +155,8 @@ const Home = () => {
       </div>
 
       {/* FB Service */}
-      <h1 className="font-bold text-2xl mb-2 text-slate-700">FB Service</h1>
-      <Separator className=" bg-green-400 " />
+      <h1 className={h1}>FB Service</h1>
+      <Separator className=" bg-green-500 " />
       <div className={wrapper}>
         {fbService.map((item, index) => (
           <div key={index} className={card}>
@@ -184,7 +191,7 @@ const Home = () => {
 
       {/* FB Product */}
       <h1 className="font-bold text-2xl mb-2 text-slate-700">FB Product</h1>
-      <Separator className=" bg-green-400 " />
+      <Separator className=" bg-green-500 " />
       <div className={wrapper}>
         {fbProduct.map((item, index) => (
           <div key={index} className={card}>
@@ -217,8 +224,8 @@ const Home = () => {
       </div>
 
       {/* Housekeeping */}
-      <h1 className="font-bold text-2xl mb-2 text-slate-700">Housekeeping</h1>
-      <Separator className=" bg-green-400 " />
+      <h1 className={h1}>Housekeeping</h1>
+      <Separator className=" bg-green-500 " />
       <div className={wrapper}>
         {housekeeping.map((item, index) => (
           <div key={index} className={card}>
@@ -251,8 +258,8 @@ const Home = () => {
       </div>
 
       {/* HR Security */}
-      <h1 className="font-bold text-2xl mb-2 text-slate-700">HR Security</h1>
-      <Separator className=" bg-green-400 " />
+      <h1 className={h1}>HR Security</h1>
+      <Separator className=" bg-green-500 " />
       <div className={wrapper}>
         {hrSecurity.map((item, index) => (
           <div key={index} className={card}>
