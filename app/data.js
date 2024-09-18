@@ -3,7 +3,7 @@ const resortManager = [
       {
             firstName: "???",
             lastName: "",
-            image: "/images/.jpg",
+            image: "/images/RM.jpg",
             position: "Resort Manager",
       },
 ]
