@@ -300,7 +300,7 @@ const hrSecurity = [
       {
             id: 40,
             firstName: "Dedi",
-            lastName: "Setiadi",
+            lastName: "Setia Permana",
             image: "/images/ds.jpg",
             position: "Security Staff",
       },

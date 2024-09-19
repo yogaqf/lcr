@@ -15,7 +15,7 @@ export default function ProfilePage() {
       if (!user) return <div>User not found</div>;
 
       return (
-            <div className='px-40 py-16'>
+            <div className='px-6 sm:px-40 py-16'>
                   <Link href={'/team'}><Button className='px-10 hover:bg-yellow-400 hover:text-black'>Back</Button></Link>
                   <div className="flex flex-col items-center py-12">
                         <Image src={user.image} width={200} height={200} alt={user.firstName} className="rounded-full" />
