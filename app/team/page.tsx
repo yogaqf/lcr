@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { useState } from 'react';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Separator } from "@/components/ui/separator";
-import { Bebas_Neue, Manrope } from "next/font/google";
+import { Bebas_Neue, Poppins } from "next/font/google";
 import { resortManager, accounting, frontOffice, salesMarketing, fbService, fbProduct, housekeeping, engineering, hrSecurity } from "../data.js"
 
 const bebasNeue = Bebas_Neue({
@@ -14,14 +14,14 @@ const bebasNeue = Bebas_Neue({
       variable: "--font-bebas-neue",
 });
 
-const manrope = Manrope({
+const poppins = Poppins({
       subsets: ["latin"],
-      weight: ["800"],
-      variable: "--font-manrope",
+      weight: ["600"],
+      variable: "--font-poppins",
 })
 
 // style tailwind css
-const h1 = `${manrope.className} font-bold text-3xl mb-2 text-slate-600`
+const h1 = `${poppins.className} uppercase text-3xl mb-2 text-slate-600`
 const container = "sm:px-20 lg:px-30 xl:px-40 2xl:px-64 px-6 py-20"
 const wrapper = "mt-8 w-full grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 lg:gap-8  mb-10"
 const card = "aspect-square w-full bg-gray-200 rounded-xl flex flex-col justify-end bg-cover shadow-2xl overflow-hidden relative group cursor-pointer"
@@ -195,7 +195,7 @@ const Home = () => {
                   </div>
 
                   {/* FB Product */}
-                  <h1 className="font-bold text-2xl mb-2 text-slate-700">FB Product</h1>
+                  <h1 className={h1}>FB Product</h1>
                   <Separator className=" bg-green-500 " />
                   <div className={wrapper}>
                         {fbProduct.map((item, index) => (

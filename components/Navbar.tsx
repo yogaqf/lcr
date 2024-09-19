@@ -60,7 +60,7 @@ export default function Navbar() {
                                                             </Link>
                                                       ))}
                                                 </div>
-                                                <Link href={"/booking"}><Button className="hover:text-primary hover:bg-yellow-400">Booking Now</Button></Link>
+                                                <Link href={"/booking"} onClick={() => setIsOpen(false)}><Button className="hover:text-primary hover:bg-yellow-400">Booking Now</Button></Link>
                                           </SheetContent>
                                     </Sheet>
                               </div>
