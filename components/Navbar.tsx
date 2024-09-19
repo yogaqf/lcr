@@ -7,10 +7,10 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const navItems = [
-      { name: "Home", href: "/" },
-      { name: "About", href: "/about" },
-      { name: "Services", href: "/services" },
-      { name: "Contact", href: "/contact" },
+      { name: "Room", href: "/room" },
+      { name: "Facilities", href: "/facilities" },
+      { name: "Team", href: "/team" },
+      { name: "About Us", href: "/about" },
 ];
 
 export default function Navbar() {
@@ -31,11 +31,12 @@ export default function Navbar() {
                                                 <Link
                                                       key={item.name}
                                                       href={item.href}
-                                                      className="text-gray-600 hover:text-primary px-1 py-2 rounded-md text-sm font-medium"
+                                                      className="text-gray-600 hover:text-primary px-1 py-2 rounded-md text-md font-medium"
                                                 >
                                                       {item.name}
                                                 </Link>
                                           ))}
+                                          <Link href={"/booking"}><Button className="hover:text-primary hover:bg-yellow-400">Booking Now</Button></Link>
                                     </div>
                               </div>
                               <div className="md:hidden">
@@ -47,7 +48,7 @@ export default function Navbar() {
                                                 </Button>
                                           </SheetTrigger>
                                           <SheetContent side="right" className="w-[240px] sm:w-[300px]">
-                                                <div className="flex flex-col space-y-4 mt-4">
+                                                <div className="flex flex-col space-y-4 mt-4 mb-4">
                                                       {navItems.map((item) => (
                                                             <Link
                                                                   key={item.name}
@@ -59,6 +60,7 @@ export default function Navbar() {
                                                             </Link>
                                                       ))}
                                                 </div>
+                                                <Link href={"/booking"}><Button className="hover:text-primary hover:bg-yellow-400">Booking Now</Button></Link>
                                           </SheetContent>
                                     </Sheet>
                               </div>
