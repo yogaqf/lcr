@@ -4,7 +4,7 @@ const resortManager = [
             id: 1,
             firstName: "Yanto",
             lastName: "Firdo",
-            image: "/images/yf.JPG",
+            image: "/images/yf.jpg",
             position: "Resort Manager",
       },
 ]
