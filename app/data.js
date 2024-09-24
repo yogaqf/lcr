@@ -2,9 +2,9 @@
 const resortManager = [
       {
             id: 1,
-            firstName: "???",
-            lastName: "",
-            image: "/images/RM.JPG",
+            firstName: "Yanto",
+            lastName: "Firdo",
+            image: "/images/yf.JPG",
             position: "Resort Manager",
       },
 ]
