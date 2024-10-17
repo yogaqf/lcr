@@ -50,8 +50,8 @@ const salesMarketing = [
       },
       {
             id: 7,
-            firstName: "Anggra",
-            lastName: "",
+            firstName: "ST",
+            lastName: "ANGGRA",
             image: "/images/sa.jpg",
             position: "Assistant Sales Manager",
       },
@@ -202,8 +202,8 @@ const housekeeping = [
       },
       {
             id: 27,
-            firstName: "Alma",
-            lastName: "Firdaus",
+            firstName: "Elmar",
+            lastName: "Sudarno",
             image: "/images/af.jpg",
             position: "Housekeeping Leader/Marketing Communications",
       },

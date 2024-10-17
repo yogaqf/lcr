@@ -1,150 +1,108 @@
 import React from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
+import { Separator } from '@/components/ui/separator';
+import { Bebas_Neue, Poppins } from "next/font/google";
+// import { Button } from '@/components/ui/button';
 import { appetizer, oriental, indonesian, local, sahid, snack, sweet, side, beverage } from "../menu.js"
 
+
+const bebasNeue = Bebas_Neue({
+      subsets: ["latin"],
+      weight: ["400"],
+      variable: "--font-bebas-neue",
+});
+
+const poppins = Poppins({
+      subsets: ["latin"],
+      weight: ["600"],
+      variable: "--font-poppins",
+})
+
+
+
+const h1 = `${poppins.className} uppercase text-3xl mb-2 text-slate-600`
+const container = "sm:px-20 lg:px-30 xl:px-40 2xl:px-64 px-6 py-20"
+const wrapper = "mt-8 w-full grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 lg:gap-8  mb-10"
+const card = "aspect-square w-full bg-gray-200 rounded-xl flex flex-col justify-end bg-cover shadow-2xl overflow-hidden relative group cursor-pointer"
+const img = "absolute h-full w-full bg-cover transition-all duration-1000 ease-in-out group-hover:scale-110 "
+const span = `${bebasNeue.className} font-bold text-[35px] lg:text-[1.8vw] text-green-800 leading-none select-none`
+const separator = "relative bg-green-500 border-t-2 border-green-400 w-[12%]"
+const price = `${poppins.className} font-bold text-[30px] lg:text-[1.5vw] text-slate-800 leading-none select-none`
+
+
 const Menu = () => {
+      const formatCurrency = (price: number) => {
+            return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(price).replace(/\,00$/, ',-')
+      }
       return (
-            <>
-                  <div className='px-6 md:px-12 lg:px-60 pt-20 mb-40'>
-                        <p className='text-3xl font-bold mb-10'>Appetizer</p>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                              {appetizer.map((menu, index) => (
-                                    <div key={index}>
-                                          <div className="bg-white rounded-lg shadow-lg p-4">
-                                                <Image src={menu.image} alt={menu.name} width={400} height={300} className="w-full h-40 object-cover" />
-                                                <h4 className="text-lg font-bold mt-2">{menu.name}</h4>
-                                                <p>{Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(menu.price)}</p>
+            <div className={container}>
+                  <h1 className={h1}>Appetizer</h1>
+                  <Separator className=" bg-green-500 " />
+                  <div className={wrapper}>
+                        {appetizer.map((item, index) => (
+                              <Link key={index} href={`/menu/${item.id}`}>
+                                    <div className={card}>
+                                          <Image src={item.image} width={300} height={300} alt={item.name} className={img} />
+                                          <div className="z-40 flex flex-col pt-3 pb-4 px-4 bg-green-100">
+                                                <span className={span}>{item.name}</span>
+                                                <span className={price}>{formatCurrency(item.price)}</span>
                                           </div>
                                     </div>
-                              ))}
-                        </div>
-
-                        {/* oriental */}
-                        <p className='text-3xl font-bold mb-10 mt-36'>Oriental Choice</p>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                              {oriental.map((menu, index) => (
-                                    <div key={index}>
-                                          <div className="bg-white rounded-lg shadow-lg p-4">
-                                                <Image src={menu.image} alt={menu.name} width={400} height={300} className="w-full h-40 object-cover" />
-                                                <h4 className="text-lg font-bold mt-2">{menu.name}</h4>
-                                                <p>{Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(menu.price)}</p>
-                                          </div>
-                                    </div>
-                              ))}
-                        </div>
-
-
-                        {/* indonesian */}
-                        <p className='text-3xl font-bold mb-10 mt-36'>Indonesian Favorites</p>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                              {indonesian.map((menu, index) => (
-                                    <div key={index}>
-                                          <div className="bg-white rounded-lg shadow-lg p-4">
-                                                <Image src={menu.image} alt={menu.name} width={400} height={300} className="w-full h-40 object-cover" />
-                                                <h4 className="text-lg font-bold mt-2">{menu.name}</h4>
-                                                <p>{Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(menu.price)}</p>
-                                          </div>
-                                    </div>
-                              ))}
-                        </div>
-
-                        {/* local */}
-                        <p className='text-3xl font-bold mb-10 mt-36'>Local Signature Dish</p>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                              {local.map((menu, index) => (
-                                    <div key={index}>
-                                          <div className="bg-white rounded-lg shadow-lg p-4">
-                                                <Image src={menu.image} alt={menu.name} width={400} height={300} className="w-full h-40 object-cover" />
-                                                <h4 className="text-lg font-bold mt-2">{menu.name}</h4>
-                                                <p>{Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(menu.price)}</p>
-                                          </div>
-                                    </div>
-                              ))}
-                        </div>
-
-                        {/* sahid */}
-                        <p className='text-3xl font-bold mb-10 mt-36'>Sahid Signature</p>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                              {sahid.map((menu, index) => (
-                                    <div key={index}>
-                                          <div className="bg-white rounded-lg shadow-lg p-4">
-                                                <Image src={menu.image} alt={menu.name} width={400} height={300} className="w-full h-40 object-cover" />
-                                                <h4 className="text-lg font-bold mt-2">{menu.name}</h4>
-                                                <p>{Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(menu.price)}</p>
-                                          </div>
-                                    </div>
-                              ))}
-                        </div>
-
-                        {/* snack */}
-                        <p className='text-3xl font-bold mb-10 mt-36'>Snack Corner</p>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                              {snack.map((menu, index) => (
-                                    <div key={index}>
-                                          <div className="bg-white rounded-lg shadow-lg p-4">
-                                                <Image src={menu.image} alt={menu.name} width={400} height={300} className="w-full h-40 object-cover" />
-                                                <h4 className="text-lg font-bold mt-2">{menu.name}</h4>
-                                                <p>{Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(menu.price)}</p>
-                                          </div>
-                                    </div>
-                              ))}
-                        </div>
-
-
-                        {/* sweet */}
-                        <p className='text-3xl font-bold mb-10 mt-36'>Sweet Temptation</p>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                              {sweet.map((menu, index) => (
-                                    <div key={index}>
-                                          <div className="bg-white rounded-lg shadow-lg p-4">
-                                                <Image src={menu.image} alt={menu.name} width={400} height={300} className="w-full h-40 object-cover" />
-                                                <h4 className="text-lg font-bold mt-2">{menu.name}</h4>
-                                                <p>{Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(menu.price)}</p>
-                                          </div>
-                                    </div>
-                              ))}
-                        </div>
-
-
-
-                        {/* side */}
-                        <p className='text-3xl font-bold mb-10 mt-36'>Side Dish</p>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                              {side.map((menu, index) => (
-                                    <div key={index}>
-                                          <div className="bg-white rounded-lg shadow-lg p-4">
-                                                <Image src={menu.image} alt={menu.name} width={400} height={300} className="w-full h-40 object-cover" />
-                                                <h4 className="text-lg font-bold mt-2">{menu.name}</h4>
-                                                <p>{Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(menu.price)}</p>
-                                          </div>
-                                    </div>
-                              ))}
-                        </div>
-
-
-
-                        {/* Beverages */}
-                        <p className='text-3xl font-bold mb-10 mt-36'>Beverages</p>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                              {beverage.map((menu, index) => (
-                                    <div key={index}>
-                                          <div className="bg-white rounded-lg shadow-lg p-4">
-                                                <Image src={menu.image} alt={menu.name} width={400} height={300} className="w-full h-40 object-cover" />
-                                                <h4 className="text-lg font-bold mt-2">{menu.name}</h4>
-                                                <p>{Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(menu.price)}</p>
-                                          </div>
-                                    </div>
-                              ))}
-                        </div>
-
-
-
-
-
+                              </Link>
+                        ))}
                   </div>
-            </>
+
+                  <h1 className={h1}>Oriental</h1>
+                  <Separator className=" bg-green-500 " />
+                  <div className={wrapper}>
+                        {oriental.map((item, index) => (
+                              <Link key={index} href={`/menu/${item.id}`}>
+                                    <div className={card}>
+                                          <Image src={item.image} width={300} height={300} alt={item.name} className={img} />
+                                          <div className="z-40 flex flex-col pt-3 pb-4 px-4 bg-green-100">
+                                                <span className={span}>{item.name}</span>
+                                                <span className={price}>{formatCurrency(item.price)}</span>
+                                          </div>
+                                    </div>
+                              </Link>
+                        ))}
+                  </div>
+
+                  <h1 className={h1}>Indonesian Favorites</h1>
+                  <Separator className=" bg-green-500 " />
+                  <div className={wrapper}>
+                        {indonesian.map((item, index) => (
+                              <Link key={index} href={`/menu/${item.id}`}>
+                                    <div className={card}>
+                                          <Image src={item.image} width={300} height={300} alt={item.name} className={img} />
+                                          <div className="z-40 flex flex-col pt-3 pb-4 px-4 bg-green-100">
+                                                <span className={span}>{item.name}</span>
+                                                <span className={price}>{formatCurrency(item.price)}</span>
+                                          </div>
+                                    </div>
+                              </Link>
+                        ))}
+                  </div>
+
+                  <h1 className={h1}>Local Signature Dish</h1>
+                  <Separator className=" bg-green-500 " />
+                  <div className={wrapper}>
+                        {local.map((item, index) => (
+                              <Link key={index} href={`/menu/${item.id}`}>
+                                    <div className={card}>
+                                          <Image src={item.image} width={300} height={300} alt={item.name} className={img} />
+                                          <div className="z-40 flex flex-col pt-3 pb-4 px-4 bg-green-100">
+                                                <span className={span}>{item.name}</span>
+                                                <span className={price}>{formatCurrency(item.price)}</span>
+                                          </div>
+                                    </div>
+                              </Link>
+                        ))}
+                  </div>
+
+            </div>
 
       )
 }
-
 export default Menu
