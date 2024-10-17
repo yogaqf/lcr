@@ -4,21 +4,21 @@ const appetizer = [
             name: "Tropical Fruit Salad",
             category: "Food",
             price: 23140,
-            image: "/images/food/nasi-goreng.jpg",
+            image: "/menu/APPETIZER/TROPICAL SALAD.jpg",
       },
       {
             id: 2,
             name: "Spring Roll Ayam",
             category: "Food",
             price: 22314,
-            image: "/images/food/soto.jpg",
+            image: "/menu/APPETIZER/SPRING ROLL AYAM.jpg",
       },
       {
             id: 3,
             name: "Gado gado",
             category: "Drink",
             price: 23140,
-            image: "/images/drink/es-teh.jpg",
+            image: "/menu/APPETIZER/GADO-GADO.jpeg",
       },
 ];
 
@@ -28,21 +28,21 @@ const oriental = [
             name: "Mie (Kuah/Goreng)",
             category: "Food",
             price: 31405,
-            image: "/images/food/nasi-goreng.jpg",
+            image: "/menu/ORIENTAL CHOICE/MIE KUAH GORENG.jpg",
       },
       {
             id: 5,
             name: "Sapi Lada Hitam",
             category: "Food",
             price: 49587,
-            image: "/images/food/soto.jpg",
+            image: "/menu/ORIENTAL CHOICE/SAPI LADA HITAM.jpg",
       },
       {
             id: 6,
             name: "Capcay (Kuah/Goreng)",
             category: "Food",
             price: 28926,
-            image: "/images/drink/es-teh.jpg",
+            image: "/menu/ORIENTAL CHOICE/CAPCAI GORENG.jpeg",
       },
 ];
 
@@ -52,7 +52,7 @@ const indonesian = [
             name: "Sop Buntut (Kuah/Bakar/Goreng)",
             category: "Food",
             price: 57851,
-            image: "/images/food/nasi-goreng.jpg",
+            image: "/menu/INDONESIAN FAVORITES/SOP BUNTUT KUAH.jpg",
       },
       {
             id: 8,
