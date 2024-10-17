@@ -4,8 +4,8 @@ import Image from 'next/image'
 import { Separator } from '@/components/ui/separator';
 import { Bebas_Neue, Poppins } from "next/font/google";
 // import { Button } from '@/components/ui/button';
-import { appetizer, oriental, indonesian, local, sahid, snack, sweet, side, beverage } from "../menu.js"
-
+import { appetizer, oriental, indonesian, local, } from "../menu.js"
+//sahid, snack, sweet, side, beverage
 
 const bebasNeue = Bebas_Neue({
       subsets: ["latin"],
@@ -27,7 +27,7 @@ const wrapper = "mt-8 w-full grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-
 const card = "aspect-square w-full bg-gray-200 rounded-xl flex flex-col justify-end bg-cover shadow-2xl overflow-hidden relative group cursor-pointer"
 const img = "absolute h-full w-full bg-cover transition-all duration-1000 ease-in-out group-hover:scale-110 "
 const span = `${bebasNeue.className} font-bold text-[35px] lg:text-[1.8vw] text-green-800 leading-none select-none`
-const separator = "relative bg-green-500 border-t-2 border-green-400 w-[12%]"
+//const separator = "relative bg-green-500 border-t-2 border-green-400 w-[12%]"
 const price = `${poppins.className} font-bold text-[30px] lg:text-[1.5vw] text-slate-800 leading-none select-none`
 
 
