@@ -22,7 +22,7 @@ const poppins = Poppins({
 
 
 const h1 = `${poppins.className} uppercase text-3xl mb-2 text-slate-600 mt-24`
-const container = "sm:px-20 lg:px-30 xl:px-40 2xl:px-96 px-6 py-20"
+const container = "sm:px-20 lg:px-30 xl:px-40 2xl:px-96 px-8 py-20"
 const wrapper = "mt-8 w-full grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 lg:gap-8  mb-10"
 const card = "aspect-square w-full bg-gray-200 rounded-xl flex flex-col justify-end bg-cover shadow-2xl overflow-hidden relative group cursor-pointer"
 const img = "absolute h-full w-full bg-cover transition-all duration-1000 ease-in-out group-hover:scale-110 "
