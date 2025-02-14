@@ -268,6 +268,13 @@ const housekeeping = [
             image: "/images/dg.jpg",
             position: "Housekeeping Staff/Pool Attendant",
       },
+      {
+            id: 33,
+            firstName: "Tarma",
+            lastName: "",
+            image: "/images/y.jpg",
+            position: "Landscape",
+      },
 ]
 
 const engineering = [
