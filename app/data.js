@@ -9,6 +9,16 @@ const resortManager = [
       },
 ]
 
+const general = [
+      {
+            id: 1,
+            firstName: "Ananda",
+            lastName: "Destiani Putri",
+            image: "/images/ADP.jpg",
+            position: "Resort Manager",
+      },
+]
+
 const accounting = [
       {
             id: 2,
@@ -25,27 +35,27 @@ const accounting = [
             position: "Book Keeper/General Cashier/Account Payable",
       },
       {
-            id: 4,
-            firstName: "Dede",
-            lastName: "Heryanto",
-            image: "/images/dh.jpg",
-            position: "Purchasing Manager",
-      },
-      {
             id: 5,
             firstName: "Yoga",
             lastName: "Qodar Falah",
             image: "/images/yqf.jpg",
-            position: "Account Receivable/Income Audit/IT/Graphic Design",
+            position: "Purchasing Manager/Receiving/IT/Graphic Design",
+      },
+      {
+            id: 66,
+            firstName: "Dedeh",
+            lastName: "Rahayu Ningsih",
+            image: "/images/BLN.png",
+            position: "Account Receivable/Income Audit",
       },
 ]
 
 const salesMarketing = [
       {
             id: 6,
-            firstName: "Rizka",
-            lastName: "Deviasani",
-            image: "/images/rdv.jpg",
+            firstName: "Vacant",
+            lastName: "",
+            image: "/images/BLN.png",
             position: "Sales Manager",
       },
       {
@@ -60,7 +70,28 @@ const salesMarketing = [
             firstName: "Dadan",
             lastName: "Suhenda",
             image: "/images/du.jpg",
-            position: "E Commerce",
+            position: "Sales F&B & Social Event",
+      },
+      {
+            id: 27,
+            firstName: "Alma",
+            lastName: "Firdaus",
+            image: "/images/af.jpg",
+            position: "Marketing Communications",
+      },
+      {
+            id: 13,
+            firstName: "Fachrul",
+            lastName: "",
+            image: "/images/fr.jpg",
+            position: "Driver",
+      },
+      {
+            id: 14,
+            firstName: "Aliyudin",
+            lastName: "",
+            image: "/images/am.jpg",
+            position: "Driver",
       },
 ]
 
@@ -84,7 +115,7 @@ const frontOffice = [
             firstName: "Dita",
             lastName: "Eka Wahyudin",
             image: "/images/de.jpg",
-            position: "Front Office Staff",
+            position: "Front Office Staff/Graphic Designer",
       },
       {
             id: 12,
@@ -93,23 +124,17 @@ const frontOffice = [
             image: "/images/la.jpg",
             position: "Front Office Staff",
       },
-      {
-            id: 13,
-            firstName: "Fachrul",
-            lastName: "",
-            image: "/images/fr.jpg",
-            position: "Driver",
-      },
-      {
-            id: 14,
-            firstName: "Aliyudin",
-            lastName: "",
-            image: "/images/am.jpg",
-            position: "Driver",
-      },
+
 ]
 
 const fbService = [
+      {
+            id: 4,
+            firstName: "Dede",
+            lastName: "Heryanto",
+            image: "/images/dh.jpg",
+            position: "Purchasing Manager",
+      },
       {
             id: 15,
             firstName: "Angga",
@@ -200,13 +225,7 @@ const housekeeping = [
             image: "/images/ay.jpg",
             position: "Housekeeping Leader",
       },
-      {
-            id: 27,
-            firstName: "Elmar",
-            lastName: "Sudarno",
-            image: "/images/af.jpg",
-            position: "Housekeeping Leader/Marketing Communications",
-      },
+
       {
             id: 28,
             firstName: "Iwan",
@@ -252,6 +271,13 @@ const housekeeping = [
 ]
 
 const engineering = [
+      {
+            id: 34,
+            firstName: "The",
+            lastName: "Buddy",
+            image: "/images/BDY.jpg",
+            position: "Engineering Leader",
+      },
       {
             id: 34,
             firstName: "Acu",
@@ -320,4 +346,4 @@ const hrSecurity = [
       },
 ]
 
-export { resortManager, accounting, frontOffice, salesMarketing, fbService, fbProduct, housekeeping, engineering, hrSecurity }
+export { resortManager, general, accounting, frontOffice, salesMarketing, fbService, fbProduct, housekeeping, engineering, hrSecurity }

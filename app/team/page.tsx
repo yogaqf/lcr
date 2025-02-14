@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Separator } from "@/components/ui/separator";
 import { Bebas_Neue, Poppins } from "next/font/google";
-import { resortManager, accounting, frontOffice, salesMarketing, fbService, fbProduct, housekeeping, engineering, hrSecurity } from "../data.js"
+import { resortManager, general, accounting, frontOffice, salesMarketing, fbService, fbProduct, housekeeping, engineering, hrSecurity } from "../data.js"
 
 const bebasNeue = Bebas_Neue({
       subsets: ["latin"],
@@ -51,6 +51,42 @@ const Home = () => {
                                     </div>
                               </div>
                         </Link>
+                  </div>
+
+                  {/* Accounting */}
+                  <h1 className={h1}>General Admin</h1>
+                  <Separator className=" bg-green-500 " />
+                  <div className={wrapper}>
+                        {general.map((item, index) => (
+                              <Link key={index} href={`/profile/${item.id}`}>
+                                    <div className={card}>
+                                          {isLoading && (
+                                                <>
+                                                      <Skeleton className={img} />
+                                                      <div className="w-full px-4">
+                                                            <Skeleton className="relative bg-slate-200 border-t-2 border-slate-200 w-[12%]" style={{ height: "0.29vw" }} />
+                                                            <div className="z-40 flex flex-col pt-3 pb-4 px-4">
+                                                                  <Skeleton className="h-6 my-2 w-full rounded-md bg-slate-200" />
+                                                                  <Skeleton className="h-6 my-2 w-full rounded-md bg-slate-200" />
+                                                            </div>
+                                                      </div>
+                                                </>
+                                          )}
+                                          {!isLoading && (
+                                                <>
+                                                      <Image src={item.image} width={300} height={300} alt={item.firstName} className={img} />
+                                                      <div className="w-full px-4">
+                                                            <Separator className={separator} style={{ borderTop: "0.29vw solid rgb(0, 255, 0)" }} />
+                                                      </div>
+                                                      <div className=" z-40 flex flex-col pt-3 pb-4 px-4">
+                                                            <span className={span}>{item.firstName}</span>
+                                                            <span className={span}>{item.lastName}</span>
+                                                      </div>
+                                                </>
+                                          )}
+                                    </div>
+                              </Link>
+                        ))}
                   </div>
 
                   {/* Accounting */}
