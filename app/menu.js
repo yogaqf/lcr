@@ -184,7 +184,7 @@ const sahid = [
             id: 20,
             name: "Ayam Bakar Geprek Sahid",
             category: "Drink",
-            price: 5000,
+            price: 50000,
             image: "/menu/SAHID SIGNATURE/AYAM BAKAR GEPRK.jpeg",
             description: "Grilled chicken breast served with steamed rice.",
       },
