@@ -272,7 +272,7 @@ const housekeeping = [
             id: 33,
             firstName: "Tarma",
             lastName: "",
-            image: "/images/y.jpg",
+            image: "/images/t.jpg",
             position: "Landscape",
       },
 ]
