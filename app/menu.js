@@ -119,7 +119,7 @@ const local = [
             id: 13,
             name: "Nasi Goreng Kampung",
             category: "Food",
-            price: 55000,
+            price: 28926,
             image: "/menu/LOCAL SIGNATURE DISH/NASI GORENG KAMPUNG.jpg",
             description: "Indonesian-style fried rice made with vegetables, served with fried egg and chicken.",
 
@@ -167,7 +167,7 @@ const sahid = [
             id: 18,
             name: "Nasi Goreng Sahid",
             category: "Food",
-            price: 25000,
+            price: 55000,
             image: "/menu/SAHID SIGNATURE/NASI GORENG SAHID.jpg",
             description: "Indonesian-style fried rice made with vegetables, served with fried egg and chicken.",
       },
