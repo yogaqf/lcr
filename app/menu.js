@@ -53,7 +53,7 @@ const oriental = [
             category: "Food",
             price: 28926,
             image: "/menu/ORIENTAL CHOICE/CAPCAI GORENG.jpeg",
-            description: "Stir-fried mixed vegetables made with your choice of beef, pork, or chicken, served with steamed rice.",
+            description: "Stir-fried mixed vegetables made with your choice of beef or chicken, served with steamed rice.",
             rating: 5
       },
 ];
@@ -119,7 +119,7 @@ const local = [
             id: 13,
             name: "Nasi Goreng Kampung",
             category: "Food",
-            price: 28926,
+            price: 55000,
             image: "/menu/LOCAL SIGNATURE DISH/NASI GORENG KAMPUNG.jpg",
             description: "Indonesian-style fried rice made with vegetables, served with fried egg and chicken.",
 
