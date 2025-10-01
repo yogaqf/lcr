@@ -9,15 +9,12 @@ const resortManager = [
       },
 ]
 
-const general = [
-      {
-            id: 1,
-            firstName: "Ananda",
-            lastName: "Destiani Putri",
-            image: "/images/ADP.jpg",
-            position: "Resort Manager",
-      },
-]
+const general
+
+
+      = [
+
+      ]
 
 const accounting = [
       {
@@ -45,19 +42,12 @@ const accounting = [
             id: 66,
             firstName: "Dedeh",
             lastName: "Rahayu Ningsih",
-            image: "/images/BLN.png",
+            image: "/images/ddh.jpg",
             position: "Account Receivable/Income Audit",
       },
 ]
 
 const salesMarketing = [
-      {
-            id: 6,
-            firstName: "Vacant",
-            lastName: "",
-            image: "/images/BLN.png",
-            position: "Sales Manager",
-      },
       {
             id: 7,
             firstName: "ST",
@@ -71,13 +61,6 @@ const salesMarketing = [
             lastName: "Suhenda",
             image: "/images/du.jpg",
             position: "Sales F&B & Social Event",
-      },
-      {
-            id: 27,
-            firstName: "Alma",
-            lastName: "Firdaus",
-            image: "/images/af.jpg",
-            position: "Marketing Communications",
       },
       {
             id: 13,
@@ -97,13 +80,6 @@ const salesMarketing = [
 
 const frontOffice = [
       {
-            id: 9,
-            firstName: "Dadan",
-            lastName: "",
-            image: "/images/d.jpg",
-            position: "Front Office Leader",
-      },
-      {
             id: 10,
             firstName: "Hanifah",
             lastName: "Rupjanahnur",
@@ -118,49 +94,21 @@ const frontOffice = [
             position: "Front Office Staff/Graphic Designer",
       },
       {
-            id: 12,
-            firstName: "Lusy",
-            lastName: "Agustina",
-            image: "/images/la.jpg",
-            position: "Front Office Staff",
+            id: 27,
+            firstName: "Alma",
+            lastName: "Firdaus",
+            image: "/images/af.jpg",
+            position: "Marketing Communications",
       },
 
 ]
 
 const fbService = [
       {
-            id: 4,
-            firstName: "Dede",
-            lastName: "Heryanto",
-            image: "/images/dh.jpg",
-            position: "Purchasing Manager",
-      },
-      {
-            id: 15,
-            firstName: "Angga",
-            lastName: "Wardiman",
-            image: "/images/aw.jpg",
-            position: "FB Service Leader",
-      },
-      {
-            id: 16,
-            firstName: "Soni",
-            lastName: "Sopian",
-            image: "/images/ss.jpg",
-            position: "FB Service Staff",
-      },
-      {
             id: 17,
             firstName: "Heri",
             lastName: "Hermawan",
             image: "/images/hh.jpg",
-            position: "FB Service Staff",
-      },
-      {
-            id: 18,
-            firstName: "Safitri",
-            lastName: "",
-            image: "/images/s.jpg",
             position: "FB Service Staff",
       },
       {
@@ -175,9 +123,9 @@ const fbService = [
 const fbProduct = [
       {
             id: 20,
-            firstName: "Budi",
-            lastName: "Priadi",
-            image: "/images/bp.jpg",
+            firstName: "Dede",
+            lastName: "Sumpena",
+            image: "/images/ddo.jpg",
             position: "Sous Chef",
       },
       {
@@ -208,13 +156,6 @@ const fbProduct = [
             image: "/images/sr.jpg",
             position: "Cook",
       },
-      {
-            id: 25,
-            firstName: "Afdillah",
-            lastName: "",
-            image: "/images/a.jpg",
-            position: "Steward",
-      },
 ]
 
 const housekeeping = [
@@ -231,34 +172,6 @@ const housekeeping = [
             firstName: "Iwan",
             lastName: "Wandi",
             image: "/images/iw.jpg",
-            position: "Housekeeping Staff",
-      },
-      {
-            id: 29,
-            firstName: "Nurnyadin",
-            lastName: "",
-            image: "/images/n.jpg",
-            position: "Housekeeping Staff",
-      },
-      {
-            id: 30,
-            firstName: "Nandang",
-            lastName: "JR",
-            image: "/images/nj.jpg",
-            position: "Housekeeping Staff",
-      },
-      {
-            id: 31,
-            firstName: "Yusuf",
-            lastName: "Supriadi",
-            image: "/images/ys.jpg",
-            position: "Housekeeping Staff",
-      },
-      {
-            id: 32,
-            firstName: "Riki",
-            lastName: "Rohendi",
-            image: "/images/rr.jpg",
             position: "Housekeeping Staff",
       },
       {
@@ -280,16 +193,9 @@ const housekeeping = [
 const engineering = [
       {
             id: 34,
-            firstName: "The",
-            lastName: "Buddy",
+            firstName: "Budi",
+            lastName: "Agung Setiadi",
             image: "/images/BDY.jpg",
-            position: "Engineering Leader",
-      },
-      {
-            id: 34,
-            firstName: "Acu",
-            lastName: "Syamsudin",
-            image: "/images/as.jpg",
             position: "Engineering Leader",
       },
       {
@@ -299,31 +205,16 @@ const engineering = [
             image: "/images/bs.jpg",
             position: "Engineering Staff",
       },
-      {
-            id: 36,
-            firstName: "Arin",
-            lastName: "Rosid",
-            image: "/images/ar.jpg",
-            position: "Engineering Staff",
-      },
-      {
-            id: 37,
-            firstName: "Edi",
-            lastName: "Gustiadi",
-            image: "/images/eg.jpg",
-            position: "Engineering Staff",
-      },
 ]
 
 const hrSecurity = [
       {
-            id: 38,
-            firstName: "Tri",
-            lastName: "Waluyo",
-            image: "/images/tw.jpg",
-            position: "HR Manager",
-      },
-      {
+            id: 1,
+            firstName: "Ananda",
+            lastName: "Destiani Putri",
+            image: "/images/ADP.jpg",
+            position: "Resort Manager",
+      }, {
             id: 39,
             firstName: "Cece",
             lastName: "",
