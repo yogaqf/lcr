@@ -101,10 +101,25 @@ const frontOffice = [
             position: "Marketing Communications",
       },
 
+      {
+            id: 55,
+            firstName: "Akmal",
+            lastName: "Fauzi",
+            image: "/images/blank.jpg",
+            position: "FO Staff",
+      },
+
 ]
 
 const fbService = [
+
       {
+            id: 55,
+            firstName: "Ambo",
+            lastName: "Lopi",
+            image: "/images/blank.jpg",
+            position: "Banquet Supervisor",
+      }, {
             id: 17,
             firstName: "Heri",
             lastName: "Hermawan",
@@ -116,6 +131,14 @@ const fbService = [
             firstName: "Hildan",
             lastName: "",
             image: "/images/h.jpg",
+            position: "FB Service Staff",
+      },
+
+      {
+            id: 55,
+            firstName: "Sintia",
+            lastName: "Hasanah",
+            image: "/images/blank.jpg",
             position: "FB Service Staff",
       },
 ]
@@ -203,6 +226,14 @@ const engineering = [
             firstName: "Budi",
             lastName: "Setiawan",
             image: "/images/bs.jpg",
+            position: "Engineering Staff",
+      },
+
+      {
+            id: 55,
+            firstName: "Taufik",
+            lastName: "Gani Gunawan",
+            image: "/images/blank.jpg",
             position: "Engineering Staff",
       },
 ]
